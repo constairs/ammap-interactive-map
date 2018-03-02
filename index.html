@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>Главная</title>
+		<link rel="stylesheet" href="assets/css/bootstrap.css">
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/select2.css">
+		<link rel="stylesheet" href="assets/ammap/ammap.css" type="text/css">
+		<link rel="stylesheet" href="assets/css/style.css">
+	</head>
+	<body>
+		
+<!--Page Wrapper Start-->
+<div id="wrapper">
+		
+		<!--Section Supplier Starts Here-->
+		<section class="s-supplier">
+			<div class="container">
+
+				<h3 class="h3 title-head text-center">Наши поставщики</h3>
+				<hr class="small-divider">
+				<p class="block-description">Мы работаем с ведущими поставщиками основых <br>винодельческих регионов мира</p>
+				<div class="row">
+					<div class="col-sm-12 col-md-6 col-lg-7 pt-xs hidden-sm hidden-xs">
+						<div class="ammap-container">
+							<div id="chartdiv"></div>
+						</div>
+						
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-5 pt-xs">
+
+						<ul class="select-group">
+							<li>
+								<select name="country"  id="selectCountry" class="js-example-basic-single">
+									<option value="noneCountry">Выберите страну</option>
+									<option value="AU">Австралия</option>
+									<option value="AT">Австрия</option>
+									<option value="AR">Аргентина</option>
+									<option value="BE">Бельгия</option>
+									<option value="GB">Великобритания</option>
+									<option value="DE">Германия</option>
+									<option value="GE">Грузия</option>
+									<option value="ES">Испания</option>
+									<option value="IT">Италия</option>
+									<option value="LT">Литва</option>
+									<option value="NL">Нидерланды</option>
+									<option value="NZ">Новая Зеландия</option>
+									<option value="PT">Португалия</option>
+									<option value="PR">Пэтро-Рико</option>
+									<option value="US">США</option>
+									<option value="FR">Франция</option>
+									<option value="CZ">Чехия</option>
+									<option value="CL">Чили</option>
+									<option value="EE">Эстония</option>
+									<option value="ZA">ЮАР</option>
+								</select>
+
+							</li>
+							<li>
+								<select name="region" id="selectRegion" class="js-example-basic-single">
+									<option value="noneRegion">Выберите регион</option>
+								</select>
+							</li>
+							<li>
+								<select name="brand" class="js-example-basic-single" id="selectBrand">
+									<option value="noneBrand">Выберите производителя</option>
+									<option value="Fattoria">Fattoria Nittardi</option>
+									<option value="Fattoria">Fattoria Nittardi</option>
+									<option value="Fattoria">Fattoria Nittardi</option>
+									<option value="Fattoria">Fattoria Nittardi</option>
+									<option value="Fattoria">Fattoria Nittardi</option>
+									<option value="Fattoria">Fattoria Nittardi</option>
+									<option value="Fattoria">Fattoria Nittardi</option>
+								</select>
+							</li>
+						</ul>
+						<div class="supplier-description">
+							<h6 class="supplier-name">
+							</h6>
+							<div class="supplier-logo"><img src="assets/images/logo-nittardi.png" alt="Alt"></div>
+							<p class="supplier-text">
+							Виноградники Ниттарди рассоложены на участке площадью 14 га,
+								из которых 11 га засажены итальянским сортом Санджовезе, 1,5 га – Мерло, а так же имеется небольшой участок – Канайоло.
+								Белые сорта – Совиньон Блан, Треббьяно и Мальвазия.
+							</p>
+							<a href="#" class="btn btn-sm accent-btn">Подробнее</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--Section Supplier Ends Here-->
+
+</div>
+<!--Page Wrapper End-->
+		
+		<script type="text/javascript" src="assets/js/jquery-2.1.3.min.js"></script>
+		<script type="text/javascript" src="assets/js/select2.min.js"></script>
+		<script type="text/javascript" src="assets/ammap/ammap.js"></script>
+		<script type="text/javascript" src="assets/ammap/maps/js/worldLow.js"></script>
+		<script type="text/javascript" src="assets/ammap/maps/js/italyLow.js"></script>
+		<script type="text/javascript" src="assets/ammap/maps/js/franceLow.js"></script>
+		<script type="text/javascript" src="assets/ammap/maps/js/portugalLow.js"></script>
+		<script type="text/javascript" src="assets/ammap/maps/js/netherlandsLow.js"></script>
+		<script type="text/javascript" src="assets/ammap/maps/js/lithuaniaLow.js"></script>
+		<script type="text/javascript" src="assets/ammap/maps/js/puertoRicoLow.js"></script>
+		<script type="text/javascript" src="assets/ammap/maps/js/australiaLow.js"></script>
+		<script type="text/javascript" src="assets/ammap/maps/js/lithuaniaLow.js"></script>
+		<script type="text/javascript" src="assets/ammap/maps/js/usaLow.js"></script>
+		<script type="text/javascript" src="assets/ammap/maps/js/czechRepublicLow.js"></script>
+		<script type="text/javascript" src="assets/ammap/maps/js/austriaLow.js"></script>
+		<script type="text/javascript" src="assets/ammap/maps/js/belgiumLow.js"></script>
+		<script type="text/javascript" src="assets/ammap/maps/js/estoniaLow.js"></script>
+		<script type="text/javascript" src="assets/ammap/maps/js/georgiaLow.js"></script>
+		<script type="text/javascript" src="assets/ammap/maps/js/germanyLow.js"></script>
+		<script type="text/javascript" src="assets/ammap/maps/js/unitedKingdomLow.js"></script>
+		<script type="text/javascript" src="assets/ammap/maps/js/southAfricaLow.js"></script>
+		<script type="text/javascript" src="assets/ammap/maps/js/newZealandLow.js"></script>
+		<script type="text/javascript" src="assets/ammap/maps/js/spainLow.js"></script>
+		<script type="text/javascript" src="assets/ammap/maps/js/argentinaLow.js"></script>
+		<script type="text/javascript" src="assets/ammap/maps/js/chileLow.js"></script>
+		<script type="text/javascript" src="assets/js/maps.js"></script>
+
+	</body>
+</html>

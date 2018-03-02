@@ -1,0 +1,126 @@
+.ammap-container {
+  height: 570px; }
+
+#chartdiv {
+  width: 100%;
+  height: 100%; }
+  #chartdiv a {
+    display: none !important; }
+
+.amcharts-balloon-bg {
+  stroke: #80B56D;
+  stroke-dasharray: 5,5;
+  fill: #8BFABB; }
+
+.amcharts-chart-div g[role="menuitem"]:hover {
+  -webkit-box-shadow: 0 0 5px #000;
+          box-shadow: 0 0 5px #000; }
+
+.amcharts-chart-div g[role="menuitem"] path {
+  -webkit-transition: all .7s;
+  -o-transition: all .7s;
+  transition: all .7s; }
+  .amcharts-chart-div g[role="menuitem"] path:hover {
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); }
+
+.ammapDescriptionWindow {
+  background-color: #ccc;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  font-family: Verdana;
+  font-size: 10px;
+  opacity: 0.95;
+  overflow: auto; }
+
+.ammapDescriptionTitle {
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 10px; }
+
+.amcharts-map-area {
+  -webkit-transition: all .3s .3s ease-out;
+  -o-transition: all .3s .3s ease-out;
+  transition: all .3s .3s ease-out; }
+
+.amcharts-map-area:hover {
+  fill: #93c765;
+  stroke: #93c765;
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out; }
+
+.map-marker {
+  margin-left: 0px;
+  margin-top: -25px; }
+
+.pulse {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #ffffff;
+  -webkit-border-radius: 100%;
+  border-radius: 50% 50% 50% 0;
+  background-color: #0E55CC;
+  z-index: 10;
+  position: absolute;
+  -webkit-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+  .pulse::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    position: absolute;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; }
+  .pulse:hover {
+    -webkit-box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin-top: -5px; }
+
+@-webkit-keyframes pulse {
+  0% {
+    transform scale(0.1, 0.1) { }
+    opacity 0.0 { } }
+  50% {
+    opacity 1.0 { } }
+  100% {
+    transform scale(1.2, 1.2) { }
+    opacity 0 { } } }
+
+@keyframes pulse {
+  0% {
+    transform scale(0.1, 0.1) { }
+    opacity 0.0 { } }
+  50% {
+    opacity 1.0 { } }
+  100% {
+    transform scale(1.2, 1.2) { }
+    opacity 0 { } } }
+
+@-webkit-keyframes "pulse" {
+  0% {
+    -webkit-transform: scale(0);
+    opacity: 0.0; }
+  25% {
+    -webkit-transform: scale(0);
+    opacity: 0.1; }
+  50% {
+    -webkit-transform: scale(0.1);
+    opacity: 0.3; }
+  75% {
+    -webkit-transform: scale(0.5);
+    opacity: 0.5; }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0.0; } }
